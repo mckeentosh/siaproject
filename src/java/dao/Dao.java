@@ -18,7 +18,7 @@ public class Dao {
     public static Connection getCon(){
         try {
             Class.forName("org.postgresql.Driver");
-            con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/","postgres","123");
+            con = DriverManager.getConnection("jdbc:postgresql://ec2-54-235-246-201.compute-1.amazonaws.com:5432/d4vm9n5pcuq9pv?sslmode=require","wpyfudjzokenfz","57813cdd2c509fafd01ee81ca53e7827ef8a0fc1e342fab0654e5637b0c6fa23");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e);
         }
